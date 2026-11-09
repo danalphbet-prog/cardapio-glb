@@ -1,82 +1,68 @@
-[
-  {
-    "name": "buttered toast 3d model.glb",
-    "url": "models/buttered toast 3d model.glb",
-    "bytes": 8272540
-  },
-  {
-    "name": "chocolate milkshake 3d model.glb",
-    "url": "models/chocolate milkshake 3d model.glb",
-    "bytes": 7348600
-  },
-  {
-    "name": "coffee cup 3d model.glb",
-    "url": "models/coffee cup 3d model.glb",
-    "bytes": 3003452
-  },
-  {
-    "name": "fresh salad bowl 3d model.glb",
-    "url": "models/fresh salad bowl 3d model.glb",
-    "bytes": 65052784
-  },
-  {
-    "name": "grilled cheese sandwich 3d model.glb",
-    "url": "models/grilled cheese sandwich 3d model.glb",
-    "bytes": 13475848
-  },
-  {
-    "name": "hamburger 3d model.glb",
-    "url": "models/hamburger 3d model.glb",
-    "bytes": 13270732
-  },
-  {
-    "name": "pepperoni pizza 3d model.glb",
-    "url": "models/pepperoni pizza 3d model.glb",
-    "bytes": 26348516
-  },
-  {
-    "name": "salad bowl 3d model.glb",
-    "url": "models/salad bowl 3d model.glb",
-    "bytes": 5918944
-  },
-  {
-    "name": "sample_2026-11-06T171912.208.glb",
-    "url": "models/sample_2026-11-06T171912.208.glb",
-    "bytes": 4309152
-  },
-  {
-    "name": "sample_2026-11-06T233822.236.glb",
-    "url": "models/sample_2026-11-06T233822.236.glb",
-    "bytes": 10953452
-  },
-  {
-    "name": "sample_2026-11-06T235659.148.glb",
-    "url": "models/sample_2026-11-06T235659.148.glb",
-    "bytes": 9876540
-  },
-  {
-    "name": "sample_2026-11-07T003035.471.glb",
-    "url": "models/sample_2026-11-07T003035.471.glb",
-    "bytes": 14026112
-  },
-  {
-    "name": "tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a (1).glb",
-    "url": "models/tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a (1).glb",
-    "bytes": 5334992
-  },
-  {
-    "name": "tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a.glb",
-    "url": "models/tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a.glb",
-    "bytes": 5334992
-  },
-  {
-    "name": "tripo_convert_b82c8323-ae0d-45ad-aa0e-f6639bee180c.glb",
-    "url": "models/tripo_convert_b82c8323-ae0d-45ad-aa0e-f6639bee180c.glb",
-    "bytes": 11872232
-  },
-  {
-    "name": "tripo_convert_f147331d-495e-49ea-826d-f8c499187d6d (1).glb",
-    "url": "models/tripo_convert_f147331d-495e-49ea-826d-f8c499187d6d (1).glb",
-    "bytes": 60308616
-  }
-]
+{
+  "modelos": [
+    {
+      "arquivo": "buttered toast 3d model.glb",
+      "bytes": 8272540
+    },
+    {
+      "arquivo": "chocolate milkshake 3d model.glb",
+      "bytes": 7348600
+    },
+    {
+      "arquivo": "coffee cup 3d model.glb",
+      "bytes": 3003452
+    },
+    {
+      "arquivo": "fresh salad bowl 3d model.glb",
+      "bytes": 65052784
+    },
+    {
+      "arquivo": "grilled cheese sandwich 3d model.glb",
+      "bytes": 13475848
+    },
+    {
+      "arquivo": "hamburger 3d model.glb",
+      "bytes": 13270732
+    },
+    {
+      "arquivo": "pepperoni pizza 3d model.glb",
+      "bytes": 26348516
+    },
+    {
+      "arquivo": "salad bowl 3d model.glb",
+      "bytes": 5918944
+    },
+    {
+      "arquivo": "sample_2026-11-06T171912.208.glb",
+      "bytes": 4309152
+    },
+    {
+      "arquivo": "sample_2026-11-06T233822.236.glb",
+      "bytes": 10953452
+    },
+    {
+      "arquivo": "sample_2026-11-06T235659.148.glb",
+      "bytes": 9876540
+    },
+    {
+      "arquivo": "sample_2026-11-07T003035.471.glb",
+      "bytes": 14026112
+    },
+    {
+      "arquivo": "tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a (1).glb",
+      "bytes": 5334992
+    },
+    {
+      "arquivo": "tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a.glb",
+      "bytes": 5334992
+    },
+    {
+      "arquivo": "tripo_convert_b82c8323-ae0d-45ad-aa0e-f6639bee180c.glb",
+      "bytes": 11872232
+    },
+    {
+      "arquivo": "tripo_convert_f147331d-495e-49ea-826d-f8c499187d6d (1).glb",
+      "bytes": 60308616
+    }
+  ]
+}
