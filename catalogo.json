@@ -1,20 +1,22 @@
-{
-  "modelos": [
-    {
-      "arquivo": "butteredtoast.glb",
-      "bytes": 8272540
-    },
-    {
-      "arquivo": "pepperonipizza.glb",
-      "bytes": 13242244
-    },
-    {
-      "arquivo": "pepperonipizza_v2.glb",
-      "bytes": 14496456
-    },
-    {
-      "arquivo": "saladbowl.glb",
-      "bytes": 8882232
-    }
-  ]
-}
+[
+  {
+    "name": "butteredtoast.glb",
+    "url": "models/butteredtoast.glb",
+    "bytes": 8272540
+  },
+  {
+    "name": "pepperonipizza.glb",
+    "url": "models/pepperonipizza.glb",
+    "bytes": 13242244
+  },
+  {
+    "name": "pepperonipizza_v2.glb",
+    "url": "models/pepperonipizza_v2.glb",
+    "bytes": 14496456
+  },
+  {
+    "name": "saladbowl.glb",
+    "url": "models/saladbowl.glb",
+    "bytes": 8882232
+  }
+]
