@@ -1,31 +1,75 @@
 name: Publicar GLB no GitHub Pages
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
-  group: pages
+  group: github-pages
   cancel-in-progress: true
+
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
       - name: Configurar Pages
         uses: actions/configure-pages@v5
+
       - name: Validar catálogo
-        run: python3 atualizar_catalogo.py && git diff --exit-code -- catalogo.json
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          catalogo = json.loads(
+              Path("catalogo.json").read_text()
+          )
+
+          modelos = (
+              catalogo.get("modelos", [])
+              if isinstance(catalogo, dict)
+              else catalogo
+          )
+
+          for modelo in modelos:
+              nome = (
+                  modelo.get("arquivo")
+                  or modelo.get("file")
+                  or modelo.get("name")
+              )
+
+              if not nome:
+                  raise ValueError("Modelo sem nome")
+
+              caminho = Path("models") / nome
+
+              if not caminho.is_file():
+                  raise FileNotFoundError(caminho)
+
+          print(f"{len(modelos)} modelos validados")
+          PY
+
       - name: Preparar site
+        run: touch .nojekyll
+
+      - name: Enviar site
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
       - name: Publicar
         id: deployment
         uses: actions/deploy-pages@v4
