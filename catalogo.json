@@ -1,216 +1,82 @@
-{
-  "models": [
-    {
-      "file": "arvore-gigante.glb",
-      "bytes": 2006104
-    },
-    {
-      "file": "arvore-normal.glb",
-      "bytes": 2065740
-    },
-    {
-      "file": "arvore_betula.glb",
-      "bytes": 99588
-    },
-    {
-      "file": "arvore_betula_lowpoly.glb",
-      "bytes": 163903
-    },
-    {
-      "file": "arvore_betula_ps1-1.glb",
-      "bytes": 55900
-    },
-    {
-      "file": "arvore_betula_ps1.glb",
-      "bytes": 92033
-    },
-    {
-      "file": "arvore_betula_v2.glb",
-      "bytes": 161290
-    },
-    {
-      "file": "arvore_betula_v3.glb",
-      "bytes": 0
-    },
-    {
-      "file": "arvore_ps1-1.glb",
-      "bytes": 29732
-    },
-    {
-      "file": "arvore_ps1.glb",
-      "bytes": 18480
-    },
-    {
-      "file": "buttered toast 3d model.glb",
-      "bytes": 8272540
-    },
-    {
-      "file": "chocolate milkshake 3d model.glb",
-      "bytes": 7348600
-    },
-    {
-      "file": "coelho_rig_roblox.glb",
-      "bytes": 1543116
-    },
-    {
-      "file": "coffee cup 3d model.glb",
-      "bytes": 3003452
-    },
-    {
-      "file": "espada_lowpoly_ps1.glb",
-      "bytes": 60572
-    },
-    {
-      "file": "fresh salad bowl 3d model.glb",
-      "bytes": 65052784
-    },
-    {
-      "file": "grilled cheese sandwich 3d model.glb",
-      "bytes": 13475848
-    },
-    {
-      "file": "hamburger 3d model.glb",
-      "bytes": 13270732
-    },
-    {
-      "file": "kitrabbit.glb",
-      "bytes": 1442356
-    },
-    {
-      "file": "kitrabbit_pendular.glb",
-      "bytes": 619940
-    },
-    {
-      "file": "macieira_J_A.glb",
-      "bytes": 1572796
-    },
-    {
-      "file": "macieira_J_B.glb",
-      "bytes": 1235576
-    },
-    {
-      "file": "macieira_J_C.glb",
-      "bytes": 898344
-    },
-    {
-      "file": "macieira_J_D.glb",
-      "bytes": 479960
-    },
-    {
-      "file": "macieira_LOD_A_-40pct.glb",
-      "bytes": 2596732
-    },
-    {
-      "file": "macieira_final_tronco_folhas-1.glb",
-      "bytes": 4066256
-    },
-    {
-      "file": "macieira_final_tronco_folhas.glb",
-      "bytes": 4066256
-    },
-    {
-      "file": "macieira_inclinada.glb",
-      "bytes": 5782036
-    },
-    {
-      "file": "macieira_inclinada_v2.glb",
-      "bytes": 4191800
-    },
-    {
-      "file": "macieira_v2_tronco_folhas_planes80.glb",
-      "bytes": 4066256
-    },
-    {
-      "file": "macieira_v4.glb",
-      "bytes": 3607784
-    },
-    {
-      "file": "nuvem_alta.glb",
-      "bytes": 2726968
-    },
-    {
-      "file": "nuvem_larga.glb",
-      "bytes": 3337244
-    },
-    {
-      "file": "nuvem_pequena.glb",
-      "bytes": 1523416
-    },
-    {
-      "file": "pedra_granito_a.glb",
-      "bytes": 238248
-    },
-    {
-      "file": "pedra_granito_b.glb",
-      "bytes": 139236
-    },
-    {
-      "file": "pepperoni pizza 3d model.glb",
-      "bytes": 26348516
-    },
-    {
-      "file": "salad bowl 3d model.glb",
-      "bytes": 5918944
-    },
-    {
-      "file": "sample (1).glb",
-      "bytes": 570088
-    },
-    {
-      "file": "sample (2).glb",
-      "bytes": 1408648
-    },
-    {
-      "file": "sample (3).glb",
-      "bytes": 1629744
-    },
-    {
-      "file": "sample (4).glb",
-      "bytes": 3316980
-    },
-    {
-      "file": "sample.glb",
-      "bytes": 570088
-    },
-    {
-      "file": "sample_2026-11-06T171912.208.glb",
-      "bytes": 4309152
-    },
-    {
-      "file": "sample_2026-11-06T233822.236.glb",
-      "bytes": 10953452
-    },
-    {
-      "file": "sample_2026-11-06T235659.148.glb",
-      "bytes": 9876540
-    },
-    {
-      "file": "sample_2026-11-07T003035.471.glb",
-      "bytes": 14026112
-    },
-    {
-      "file": "tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a (1).glb",
-      "bytes": 5334992
-    },
-    {
-      "file": "tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a.glb",
-      "bytes": 5334992
-    },
-    {
-      "file": "tripo_convert_b82c8323-ae0d-45ad-aa0e-f6639bee180c.glb",
-      "bytes": 11872232
-    },
-    {
-      "file": "tripo_convert_f147331d-495e-49ea-826d-f8c499187d6d (1).glb",
-      "bytes": 60308616
-    },
-    {
-      "file": "tronco_4_lados.glb",
-      "bytes": 1356084
-    },
-    {
-      "file": "tronco_6_lados.glb",
-      "bytes": 1356632
-    }
-  ]
-}
+[
+  {
+    "name": "buttered toast 3d model.glb",
+    "url": "models/buttered toast 3d model.glb",
+    "bytes": 8272540
+  },
+  {
+    "name": "chocolate milkshake 3d model.glb",
+    "url": "models/chocolate milkshake 3d model.glb",
+    "bytes": 7348600
+  },
+  {
+    "name": "coffee cup 3d model.glb",
+    "url": "models/coffee cup 3d model.glb",
+    "bytes": 3003452
+  },
+  {
+    "name": "fresh salad bowl 3d model.glb",
+    "url": "models/fresh salad bowl 3d model.glb",
+    "bytes": 65052784
+  },
+  {
+    "name": "grilled cheese sandwich 3d model.glb",
+    "url": "models/grilled cheese sandwich 3d model.glb",
+    "bytes": 13475848
+  },
+  {
+    "name": "hamburger 3d model.glb",
+    "url": "models/hamburger 3d model.glb",
+    "bytes": 13270732
+  },
+  {
+    "name": "pepperoni pizza 3d model.glb",
+    "url": "models/pepperoni pizza 3d model.glb",
+    "bytes": 26348516
+  },
+  {
+    "name": "salad bowl 3d model.glb",
+    "url": "models/salad bowl 3d model.glb",
+    "bytes": 5918944
+  },
+  {
+    "name": "sample_2026-11-06T171912.208.glb",
+    "url": "models/sample_2026-11-06T171912.208.glb",
+    "bytes": 4309152
+  },
+  {
+    "name": "sample_2026-11-06T233822.236.glb",
+    "url": "models/sample_2026-11-06T233822.236.glb",
+    "bytes": 10953452
+  },
+  {
+    "name": "sample_2026-11-06T235659.148.glb",
+    "url": "models/sample_2026-11-06T235659.148.glb",
+    "bytes": 9876540
+  },
+  {
+    "name": "sample_2026-11-07T003035.471.glb",
+    "url": "models/sample_2026-11-07T003035.471.glb",
+    "bytes": 14026112
+  },
+  {
+    "name": "tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a (1).glb",
+    "url": "models/tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a (1).glb",
+    "bytes": 5334992
+  },
+  {
+    "name": "tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a.glb",
+    "url": "models/tripo_convert_a20efcea-9285-4167-acc0-485cbac3ce5a.glb",
+    "bytes": 5334992
+  },
+  {
+    "name": "tripo_convert_b82c8323-ae0d-45ad-aa0e-f6639bee180c.glb",
+    "url": "models/tripo_convert_b82c8323-ae0d-45ad-aa0e-f6639bee180c.glb",
+    "bytes": 11872232
+  },
+  {
+    "name": "tripo_convert_f147331d-495e-49ea-826d-f8c499187d6d (1).glb",
+    "url": "models/tripo_convert_f147331d-495e-49ea-826d-f8c499187d6d (1).glb",
+    "bytes": 60308616
+  }
+]
