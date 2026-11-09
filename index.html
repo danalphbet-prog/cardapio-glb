@@ -20,7 +20,7 @@ $('close').onclick=()=>$('modal').close();
 $('modal').addEventListener('close',()=>{if(cleanup){cleanup();cleanup=null}});
 async function preview(item){
  if(cleanup){cleanup();cleanup=null}
- $('title').textContent=item.name;$('stats').replaceChildren();$('loading').textContent='Carregando modelo...';$('modal').showModal();
+ $('title').textContent=item.name;$('stats').replaceChildren();$('loading').style.display='block';$('loading').textContent='Carregando modelo...';$('modal').showModal();
  const container=$('viewer');const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.setSize(container.clientWidth,container.clientHeight);container.append(renderer.domElement);
  const scene=new THREE.Scene();const camera=new THREE.PerspectiveCamera(45,container.clientWidth/container.clientHeight,.01,10000);const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;scene.add(new THREE.HemisphereLight(0xffffff,0x78839b,2.2));const light=new THREE.DirectionalLight(0xffffff,2.2);light.position.set(3,5,6);scene.add(light);
  let active=true,frame=0,model=null;const resize=()=>{if(!active)return;const w=container.clientWidth,h=container.clientHeight;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h)};const ro=new ResizeObserver(resize);ro.observe(container);
@@ -34,8 +34,8 @@ async function preview(item){
   for(const g of geometries){const pos=g.attributes.position;if(pos)vertices+=pos.count;if(g.index)triangles+=g.index.count/3;else if(pos)triangles+=pos.count/3}
   const data=[['Malhas',meshes],['Triângulos',Math.round(triangles).toLocaleString('pt-BR')],['Vértices',vertices.toLocaleString('pt-BR')],['Materiais',materials.size],['Texturas',textures.size],['Tamanho',bytes(item.bytes)]];
   for(const [label,value] of data){const el=document.createElement('div');el.className='stat';const small=document.createElement('span');small.textContent=label;const strong=document.createElement('b');strong.textContent=value;el.append(small,strong);$('stats').append(el)}
-  $('loading').remove();
+  $('loading').style.display='none';
  }catch(e){if(active){$('loading').textContent='Não foi possível carregar o GLB: '+e.message;$('loading').className='error'}}
 }
-try{const response=await fetch('catalogo.json',{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status);const raw=await response.json();items=(Array.isArray(raw)?raw:(raw.modelos||[])).map(x=>({name:x.name||x.arquivo||x.file,url:x.url||('models/'+encodeURIComponent(x.name||x.arquivo||x.file)),bytes:x.bytes||0})).filter(x=>x.name);render()}catch(e){$('list').textContent='Erro ao carregar catálogo: '+e.message}
+try{const response=await fetch('catalogo.json',{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status);const raw=await response.json();const entries=Array.isArray(raw)?raw:(raw.modelos||[]);items=entries.map(x=>({name:x.name||x.arquivo||x.file,url:x.url||('models/'+encodeURIComponent(x.name||x.arquivo||x.file||'')),bytes:x.bytes||0})).filter(x=>x.name);render()}catch(e){$('list').textContent='Erro ao carregar catálogo: '+e.message}
 </script></body></html>
