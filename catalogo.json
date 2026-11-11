@@ -1,18 +1,43 @@
 [
   {
+    "name": "Baobu-tapioca.glb",
+    "url": "models/Baobu-tapioca.glb",
+    "bytes": 13089812
+  },
+  {
     "name": "butteredtoast.glb",
     "url": "models/butteredtoast.glb",
     "bytes": 8272540
   },
   {
-    "name": "pepperonipizza.glb",
-    "url": "models/pepperonipizza.glb",
-    "bytes": 13242244
+    "name": "Cheese-sand.glb",
+    "url": "models/Cheese-sand.glb",
+    "bytes": 16100316
+  },
+  {
+    "name": "chocolate-milkshake.glb",
+    "url": "models/chocolate-milkshake.glb",
+    "bytes": 7348572
+  },
+  {
+    "name": "croissant 3d model.glb",
+    "url": "models/croissant 3d model.glb",
+    "bytes": 9550752
+  },
+  {
+    "name": "croissant.glb",
+    "url": "models/croissant.glb",
+    "bytes": 12276168
   },
   {
     "name": "pepperonipizza_v2.glb",
     "url": "models/pepperonipizza_v2.glb",
     "bytes": 14496456
+  },
+  {
+    "name": "pizza-realPPeroni.glb",
+    "url": "models/pizza-realPPeroni.glb",
+    "bytes": 12012676
   },
   {
     "name": "saladbowl.glb",
