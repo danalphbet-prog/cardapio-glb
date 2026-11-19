@@ -1,8 +1,63 @@
 [
   {
+    "name": "arvore-gigante.glb",
+    "url": "models/arvore-gigante.glb",
+    "bytes": 2006104
+  },
+  {
+    "name": "arvore-normal.glb",
+    "url": "models/arvore-normal.glb",
+    "bytes": 2065740
+  },
+  {
+    "name": "arvore_betula.glb",
+    "url": "models/arvore_betula.glb",
+    "bytes": 99588
+  },
+  {
+    "name": "arvore_betula_lowpoly.glb",
+    "url": "models/arvore_betula_lowpoly.glb",
+    "bytes": 163903
+  },
+  {
+    "name": "arvore_betula_ps1-1.glb",
+    "url": "models/arvore_betula_ps1-1.glb",
+    "bytes": 55900
+  },
+  {
+    "name": "arvore_betula_ps1.glb",
+    "url": "models/arvore_betula_ps1.glb",
+    "bytes": 92033
+  },
+  {
+    "name": "arvore_betula_v2.glb",
+    "url": "models/arvore_betula_v2.glb",
+    "bytes": 161290
+  },
+  {
+    "name": "arvore_betula_v3.glb",
+    "url": "models/arvore_betula_v3.glb",
+    "bytes": 0
+  },
+  {
+    "name": "arvore_ps1-1.glb",
+    "url": "models/arvore_ps1-1.glb",
+    "bytes": 29732
+  },
+  {
+    "name": "arvore_ps1.glb",
+    "url": "models/arvore_ps1.glb",
+    "bytes": 18480
+  },
+  {
     "name": "Baobu-tapioca.glb",
     "url": "models/Baobu-tapioca.glb",
     "bytes": 13089812
+  },
+  {
+    "name": "buttered toast 3d model (1).glb",
+    "url": "models/buttered toast 3d model (1).glb",
+    "bytes": 8272540
   },
   {
     "name": "butteredtoast.glb",
@@ -20,6 +75,16 @@
     "bytes": 7348572
   },
   {
+    "name": "coelho_rig_roblox.glb",
+    "url": "models/coelho_rig_roblox.glb",
+    "bytes": 1543116
+  },
+  {
+    "name": "croissant 3d model (1).glb",
+    "url": "models/croissant 3d model (1).glb",
+    "bytes": 12276168
+  },
+  {
     "name": "croissant 3d model.glb",
     "url": "models/croissant 3d model.glb",
     "bytes": 9550752
@@ -30,9 +95,129 @@
     "bytes": 12276168
   },
   {
+    "name": "espada_lowpoly_ps1.glb",
+    "url": "models/espada_lowpoly_ps1.glb",
+    "bytes": 60572
+  },
+  {
+    "name": "kitrabbit.glb",
+    "url": "models/kitrabbit.glb",
+    "bytes": 1442356
+  },
+  {
+    "name": "kitrabbit_pendular.glb",
+    "url": "models/kitrabbit_pendular.glb",
+    "bytes": 619940
+  },
+  {
+    "name": "macieira_final_tronco_folhas-1.glb",
+    "url": "models/macieira_final_tronco_folhas-1.glb",
+    "bytes": 4066256
+  },
+  {
+    "name": "macieira_final_tronco_folhas.glb",
+    "url": "models/macieira_final_tronco_folhas.glb",
+    "bytes": 4066256
+  },
+  {
+    "name": "macieira_inclinada.glb",
+    "url": "models/macieira_inclinada.glb",
+    "bytes": 5782036
+  },
+  {
+    "name": "macieira_inclinada_v2.glb",
+    "url": "models/macieira_inclinada_v2.glb",
+    "bytes": 4191800
+  },
+  {
+    "name": "macieira_J_A.glb",
+    "url": "models/macieira_J_A.glb",
+    "bytes": 1572796
+  },
+  {
+    "name": "macieira_J_B.glb",
+    "url": "models/macieira_J_B.glb",
+    "bytes": 1235576
+  },
+  {
+    "name": "macieira_J_C.glb",
+    "url": "models/macieira_J_C.glb",
+    "bytes": 898344
+  },
+  {
+    "name": "macieira_J_D.glb",
+    "url": "models/macieira_J_D.glb",
+    "bytes": 479960
+  },
+  {
+    "name": "macieira_LOD_A_-40pct.glb",
+    "url": "models/macieira_LOD_A_-40pct.glb",
+    "bytes": 2596732
+  },
+  {
+    "name": "macieira_v2_tronco_folhas_planes80.glb",
+    "url": "models/macieira_v2_tronco_folhas_planes80.glb",
+    "bytes": 4066256
+  },
+  {
+    "name": "macieira_v4.glb",
+    "url": "models/macieira_v4.glb",
+    "bytes": 3607784
+  },
+  {
+    "name": "nuvem_alta.glb",
+    "url": "models/nuvem_alta.glb",
+    "bytes": 2726968
+  },
+  {
+    "name": "nuvem_larga.glb",
+    "url": "models/nuvem_larga.glb",
+    "bytes": 3337244
+  },
+  {
+    "name": "nuvem_pequena.glb",
+    "url": "models/nuvem_pequena.glb",
+    "bytes": 1523416
+  },
+  {
+    "name": "pato.glb",
+    "url": "models/pato.glb",
+    "bytes": 76036
+  },
+  {
+    "name": "pato_v2.glb",
+    "url": "models/pato_v2.glb",
+    "bytes": 413744
+  },
+  {
+    "name": "pedra_granito_a.glb",
+    "url": "models/pedra_granito_a.glb",
+    "bytes": 238248
+  },
+  {
+    "name": "pedra_granito_b.glb",
+    "url": "models/pedra_granito_b.glb",
+    "bytes": 139236
+  },
+  {
+    "name": "pepperoni pizza 3d model (1).glb",
+    "url": "models/pepperoni pizza 3d model (1).glb",
+    "bytes": 13242244
+  },
+  {
+    "name": "pepperoni pizza 3d model (2).glb",
+    "url": "models/pepperoni pizza 3d model (2).glb",
+    "bytes": 14496456
+  },
+  {
     "name": "pepperonipizza_v2.glb",
     "url": "models/pepperonipizza_v2.glb",
     "bytes": 14496456
+  },
+  {
+    "name": "pepperonipizza_v2_reparada.glb",
+    "url": "models/pepperonipizza_v2_reparada.glb",
+    "bytes": 9586596
   },
   {
     "name": "pizza-realPPeroni.glb",
@@ -40,9 +225,49 @@
     "bytes": 12012676
   },
   {
+    "name": "salad bowl 3d model (1).glb",
+    "url": "models/salad bowl 3d model (1).glb",
+    "bytes": 8882232
+  },
+  {
     "name": "saladbowl.glb",
     "url": "models/saladbowl.glb",
     "bytes": 8882232
+  },
+  {
+    "name": "sample (1).glb",
+    "url": "models/sample (1).glb",
+    "bytes": 570088
+  },
+  {
+    "name": "sample (2).glb",
+    "url": "models/sample (2).glb",
+    "bytes": 1408648
+  },
+  {
+    "name": "sample (3).glb",
+    "url": "models/sample (3).glb",
+    "bytes": 1629744
+  },
+  {
+    "name": "sample (4).glb",
+    "url": "models/sample (4).glb",
+    "bytes": 3316980
+  },
+  {
+    "name": "sample.glb",
+    "url": "models/sample.glb",
+    "bytes": 570088
+  },
+  {
+    "name": "tronco_4_lados.glb",
+    "url": "models/tronco_4_lados.glb",
+    "bytes": 1356084
+  },
+  {
+    "name": "tronco_6_lados.glb",
+    "url": "models/tronco_6_lados.glb",
+    "bytes": 1356632
   },
   {
     "name": "veggieburger.glb",
