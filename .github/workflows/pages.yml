@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -19,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment1.outputs.page_url || steps.deployment2.outputs.page_url || steps.deployment3.outputs.page_url }}
 
     steps:
       - name: Baixar repositório
@@ -33,33 +34,16 @@ jobs:
           python3 - <<'PY'
           import json
           from pathlib import Path
-
-          catalogo = json.loads(
-              Path("catalogo.json").read_text()
-          )
-
-          modelos = (
-              catalogo.get("modelos", [])
-              if isinstance(catalogo, dict)
-              else catalogo
-          )
-
+          catalogo = json.loads(Path('catalogo.json').read_text(encoding='utf-8'))
+          modelos = catalogo.get('modelos', []) if isinstance(catalogo, dict) else catalogo
           for modelo in modelos:
-              nome = (
-                  modelo.get("arquivo")
-                  or modelo.get("file")
-                  or modelo.get("name")
-              )
-
+              nome = modelo.get('arquivo') or modelo.get('file') or modelo.get('name')
               if not nome:
-                  raise ValueError("Modelo sem nome")
-
-              caminho = Path("models") / nome
-
+                  raise ValueError('Modelo sem nome')
+              caminho = Path('models') / nome
               if not caminho.is_file():
                   raise FileNotFoundError(caminho)
-
-          print(f"{len(modelos)} modelos validados")
+          print(f'{len(modelos)} modelos validados')
           PY
 
       - name: Preparar site
@@ -70,6 +54,62 @@ jobs:
         with:
           path: .
 
-      - name: Publicar
-        id: deployment
+      - name: Aguardar artefato aparecer no GitHub
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for tentativa in $(seq 1 18); do
+            quantidade="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --jq '[.artifacts[] | select(.name == "github-pages" and .expired == false)] | length' || echo 0)"
+            echo "Verificação ${tentativa}: ${quantidade} artefato(s)"
+            if [ "$quantidade" = '1' ]; then
+              echo 'Artefato encontrado; aguardando propagação para o Pages...'
+              sleep 30
+              exit 0
+            fi
+            if [ "$quantidade" -gt 1 ]; then
+              echo '::error::Artefatos duplicados. Inicie uma execução nova.'
+              exit 1
+            fi
+            sleep 10
+          done
+          echo '::error::Artefato não apareceu na API.'
+          exit 1
+
+      - name: Publicar tentativa 1
+        id: deployment1
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Aguardar segunda tentativa
+        if: steps.deployment1.outcome == 'failure'
+        run: sleep 30
+
+      - name: Publicar tentativa 2
+        if: steps.deployment1.outcome == 'failure'
+        id: deployment2
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Aguardar terceira tentativa
+        if: steps.deployment1.outcome == 'failure' && steps.deployment2.outcome == 'failure'
+        run: sleep 45
+
+      - name: Publicar tentativa 3
+        if: steps.deployment1.outcome == 'failure' && steps.deployment2.outcome == 'failure'
+        id: deployment3
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Verificar sucesso final
+        if: always()
+        env:
+          STATUS_1: ${{ steps.deployment1.outcome }}
+          STATUS_2: ${{ steps.deployment2.outcome }}
+          STATUS_3: ${{ steps.deployment3.outcome }}
+        run: |
+          if [ "$STATUS_1" = success ] || [ "$STATUS_2" = success ] || [ "$STATUS_3" = success ]; then
+            echo 'GitHub Pages publicado com sucesso.'
+          else
+            echo '::error::Não foi possível publicar após três tentativas.'
+            exit 1
+          fi
