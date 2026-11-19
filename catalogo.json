@@ -43,5 +43,10 @@
     "name": "saladbowl.glb",
     "url": "models/saladbowl.glb",
     "bytes": 8882232
+  },
+  {
+    "name": "veggieburger.glb",
+    "url": "models/veggieburger.glb",
+    "bytes": 7344600
   }
 ]
